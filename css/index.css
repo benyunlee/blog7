@@ -1,0 +1,98 @@
+.cover {
+    /* display: block;
+    content: ''; */
+    background-image: url(http://a0.att.hudong.com/87/11/01300000164151124659114527312.jpg);
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    
+    filter: blur(5px);  /* 怎么背景模糊,内容不模糊 */
+}
+.music-box {  /* 总盒子 */
+  
+    border: 1px solid #76dba3;
+    width: 450px;
+    height: 160px;
+    background: #fefefe;
+    box-shadow: 3px 3px 5px rgba(0, 0,0, 0.3);
+    padding: 0 70px;
+    -webkit-font-smoothing: antialiased;
+
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.music .info {   /* 歌曲信息盒子部分 */
+    color: #f0615d;
+    margin-top: 10px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.info .title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.control { /* 按钮盒子部分 */
+   margin-top: 20px;
+}
+.control span i {   
+   font-size: 30px;
+   
+   color: #f0615d;  
+   cursor: pointer;
+}
+.control .back {
+   display: inline-block;
+   height: 40px;
+}
+.control .play,
+.control .forward {
+   display: inline-block;
+   height: 40px;
+   margin-left: 20px;
+}
+.control .author {
+    font-size: 15px;
+    font-family: "宋体";
+    color: #f0615d;
+    /* margin-left: 145px; */
+    float: right;
+    margin-right: 6px;
+    margin-top: 12px;
+}
+
+.progress .bar {   /* 时间进度盒子 */
+   width: 300px;
+   height: 3px;
+   /* border: 1px solid #ddd; */
+   background-color: #bbb;
+   margin-top: 15px;
+   
+}
+.progress  .progress-total {
+   width: 100%;
+   height: 3px;
+   background: #bbb;
+   cursor: pointer;
+}
+.progress  .progress-now {
+    width: 0;
+    height: 3px;
+    background-color: #f0615d;
+    position: relative;
+    top: -3px;
+    cursor: pointer;
+    
+}
+.progress .showtime {
+   margin-top: 8px;
+   text-align: right;
+   margin-right: 6px;
+   color: #f0615d;
+}

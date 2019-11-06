@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>musicPlayer</title>
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <div class="cover"></div>
+    <div class="music-box">
+        <div class="music">
+            <div class="info">    <!-- 歌曲信息 -->
+                <p class="title">歌名</p>
+                
+            </div>
+            <div class="control clearfix">  <!-- 操作按钮 -->
+                <span class="back"><i class="fa fa-step-backward"></i></span>
+                <span class="play"><i class="fa fa-pause"></i></span>
+                <span class="forward"><i class="fa fa-step-forward"></i></span>
+                <span class="author">作者</span>
+            </div>
+        </div>
+        <div class="progress">  <!-- 进度和时间 -->
+            <div class="bar">
+            <div class="progress-total"></div> 
+            <div class="progress-now"></div>
+            </div>
+            <div class="showtime">0:00</div>
+        </div>
+    </div> 
+    <script type="text/javascript" src="/js/index.js"></script>
+</body>
+</html>
